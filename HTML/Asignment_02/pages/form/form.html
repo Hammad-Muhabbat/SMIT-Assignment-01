@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <p>
+      Back to Home page ==>
+      <a style="font-size: 30px;" href="/index.html"><i class="fa fa-hand-o-left" aria-hidden="true"></i>
+      </a>
+  </p>
+  
+   
+    <h1>Forms In Html</h1>
+    <form action="url" method="get" accept-charset="UTF-8" autocomplete="off">
+      <label for="fname">First name :</label>
+      <input type="text" placeholder="Inter your name" id="fname" />
+      <br /><br />
+      <label for="last">Last name :</label>
+      <input type="text" placeholder="Last name" id="last" />
+      <br /><br />
+      <label for="pas">Inter Your password :</label>
+      <input
+        type="password"
+       
+        name="password"
+        id="pas"
+        placeholder="inter your password"
+      /><br /><br />
+      <h2>Select Class</h2>
+      <label for="101">Class Xi</label>
+      <input type="radio" value="class x1" name="class" id="101" />
+      <label for="102">Class XII</label>
+      <input type="radio" value="class xii" name="class" id="102" />
+      <br><br>
+      <h2>Select fav subjects</h2>
+    
+      <label for="math">Math</label>
+      <input type="checkbox" value="math" name="subject" id="math" >
+      <label for="eng">English</label>
+      <input type="checkbox" value="English" name="subject" id="eng">
+      <label for="phy">Pysics</label>
+      <input type="checkbox" value="Pysics" name="subject" id="phy">
+      <label for="chem">Chemistry</label>
+      <input type="checkbox" value="Chemistry" name="subject" id="chem">
+      <label for="bio">Biology</label>
+      <input type="checkbox" value="Biology" name="subject" id="bio"><br><br>
+      <h2>Select City</h2>
+      <select name="city">
+        <option value="Karachi">Karachi</option>
+        <option value="Islamabat">Islamabat</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Peshawer">Peshawer</option>
+      </select>
+      <br><br>
+    <textarea name="feedback" id="105" rows="5" placeholder="give your feedback"></textarea>
+    <br><br>
+    <input type="submit"><br><br>
+    <input type="reset" value="reset">
+
+
+    
+    
+
+    </form>
+  </body>
+</html>
