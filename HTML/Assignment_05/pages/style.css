@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Barlow", serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: #ffffff;
+    gap: 20px;
+}
+header>div a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+
+}
+
+.bar {
+  background-color: black;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 6px;
+  letter-spacing: 1;
+
+}
+.bar i {
+  margin-left: 20px;
+}
+header div:nth-child(3) {
+  font-size: 18px;
+  font-weight: 600;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+.row {
+  
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  
+
+}
+.col {
+  background-color: #000000;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+.col::before {
+  content: "COPY";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.2s ;
+  
+  
+}
+.col:hover::before {
+  opacity: 1;
+  
+
+}
+.col span {
+  padding: 0 10px 10px 0;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+@media screen and (max-width: 640px){
+  .col span {
+    display: none;
+
+  }
+  header div:last-child{
+    display: none;
+  }
+}
+@media screen and (max-width: 380px){
+  header .bar {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .col::before{
+    display: none;
+  }
+}
+
