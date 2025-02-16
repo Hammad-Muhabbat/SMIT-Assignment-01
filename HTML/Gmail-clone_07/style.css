@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-text-color: #202124;
+    --secondary-text-color: #5f6368;
+}
+body {
+    background-color: #F8FAFD;
+    height: 100vh;
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 12px;
+    margin: 8px;
+}
+nav svg:nth-of-type(1) {
+    margin-left: 20px;
+}
+
+
+.search-bar {
+    background-color: #E9EEF6;
+    height: 50px;
+    width: 45vw;
+    border-radius: 50px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    
+    
+
+} 
+.search-bar input {
+    background-color: transparent;
+    font-size: 1rem;
+    border: none;
+    width: 40vw;
+    text-align: start;
+    padding-left: 10px;
+}
+.search-bar input:focus {
+    outline: none;
+}
+
+.right-nav {
+    width: 35vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
+.right-nav img {
+    height: 35px;
+    border-radius: 50%;
+}
+main {
+    display: flex;
+  
+}
+
+#left-sidebar {
+    display: inline-block;
+    width: 17.5vw;
+    height: 90vh;
+}
+
+#left-sidebar button {
+    background-color: #C2E7FF;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#window {
+    display: inline-block;
+    background-color: white;
+    border: 20px;
+    height: 90vh;
+    width: 75vw;
+    border-radius: 20px;
+}
+.tab {
+    width: 90%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0 20px 20px 0;
+    /* text-align: center; */
+}
+.tab svg {
+
+    margin-left: 20px;
+
+}
+.tap p {
+    margin-left: 30px;
+}
+.tab span {
+    padding-left: 100px;
+}
+
+.window-top {
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    padding-bottom: 20px;
+    /* background-color: aqua; */
+}
+#check {
+    height: 15px;
+    width: 15px;
+}
+
+.window-top svg {
+    margin-left: 10px;
+}
+.nav-tab {
+    /* margin-top: 20px; */
+    width: 20vw;
+    height: 50px;
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    /* background-color: whitesmoke; */
+    
+}
+.border {
+    position: relative;
+
+}
+.border::before {
+    content: "";
+    width: 80%;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0%;
+    border-radius: 10px 10px 0 0;
+}
+.nav-tab svg {
+    margin-left: 30px;
+}
+
+.mail-container {
+    /* background-color: red; */
+    overflow-y: auto;
+    height: calc(100vh - 136px);
+    scrollbar-gutter: stable;
+    padding-right: 8px;
+    /* border-radius: 20px; */
+
+}
+.mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mail:hover .icons-container {
+    opacity: 1;
+
+}
+.icons-container{
+    display: flex;
+    opacity: 0.3;
+
+}
+.icons-container > * {
+
+    height: 36px;
+    width: 36px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+.icons-container > *:hover {
+    background-color: #cccccc;
+    
+}
+.mail-sender, .mail-msg{
+    text-wrap: nowrap;
+    font-size: 14px;
+
+    
+}
+.mail:hover {
+    box-shadow: inset 1px 0 0 rgb(218,220,224),inset -1px 0 0 rgb(218,220,224),0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+}
+.mail-sender {
+    width: 125px;
+    margin-right: 75px;
+    font-weight: 600;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.mail-msg {
+    flex-grow: 1;
+    width: 0;
+    overflow: hidden;
+}
+.timer {
+    display: flex;
+    margin-left: 75px;
+    justify-content: end;
+    align-items: center;
+}
+.icon-container2 {
+    opacity: 1;
+    list-style: none;
+    display: none;
+}
+.mail:hover .timer > p {
+    display: none;
+}
+.mail:hover .icon-container2 {
+    display: flex;
+}
+.mail:hover {
+    cursor: pointer;
+}

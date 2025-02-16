@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #ffffffb3;
+    --secondary-text-color: #ffffff;
+    --backround-color: #000000;
+    --red-color: #ed1c24;
+
+}
+
+body {
+    font-family: "Inter", serif;
+    background-color: var(--backround-color);
+    overflow: auto;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--secondary-text-color);
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 1rem;
+    color: var(--primary-text-color);
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--secondary-text-color);
+}
+ul {
+    list-style: none;
+}
+
+
+header {
+    
+    background-color: #000000;
+    
+    
+
+}
+
+.container {
+    max-width: 1320px;
+    margin-inline: auto;
+    padding: 6px 20px;
+   
+    
+    
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.Logo img{
+    width: 165px;
+    
+}
+.main-nav {
+    justify-content: space-between;
+    
+}
+
+
+.nav-links ul {
+    justify-content: center;
+    align-items: end;
+    gap: 40px;
+    
+}
+
+.hover-link {
+    color: var(--secondary-text-color);
+}
+.primary-btn {
+    background-color: var(--red-color);
+    border-radius: 25px;
+    padding: 15px 13.5px;
+}
+.secondary-btn {
+     background-color: #000000;
+     border-radius: 25px;
+     padding: 12px 14px;
+     border: 1px solid white;
+
+}
+
+.product-brand {
+    padding: 70px;
+    width: 100%;
+}
+
+.main {
+    flex-direction: column;
+    gap: 30px;
+
+
+    
+}
+
+.heading {
+    text-align: center;
+    
+}
+.heading h2 {
+    line-height: 50px;
+}
+
+.heading h2 .Salt {
+    font-size: 52px;
+    font-weight: 800;
+   
+}
+.Brand {
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.Card {
+
+}
+
+.Card-img {
+    background-color: var(--secondary-text-color);
+    justify-content: center;
+    border-radius: 6px; 
+    padding: 25px 19px;
+    object-fit: contain;
+    
+   
+    
+}
+.Btn {
+    display: block;
+    background-color: var(--backround-color);
+    color: var(--primary-text-color);
+    border: 1px solid var(--primary-text-color);
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 12px 24px;
+    width: 174px;
+    margin: 20px auto 0;
+    
+}
+.Rest-text {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.Restorent-branch {
+    justify-content: space-between;
+    align-items: stretch;
+}
+.Branch-info {
+    text-align: left;
+}
+
+.City-red {
+    color: var(--red-color);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+
+}
+.Branch-info h3 
+     
+    
+
+
+
+
+
+
